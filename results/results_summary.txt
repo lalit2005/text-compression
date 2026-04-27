@@ -1,13 +1,14 @@
-COMPRESSION RESULTS SUMMARY
-================================================================================
-     Dataset     Algorithm       Orig(B)       Comp(B)            CR           BPS       Entropy    Redundancy           MSE          PSNR           SNR    EnergyComp       Time(s)
---------------------------------------------------------------------------------------------------------------------------------------------
-High Redunda          LZ77         50000         21270        2.3507        3.4032        3.5616        0.5548           0.0           inf           inf        0.8299        0.1374
-High Redunda           LZW         50000         11255        4.4425        1.8008        3.5616        0.5548           0.0           inf           inf        0.8513        0.0623
-High Redunda       Huffman         50000         22482         2.224        3.5971        3.5616        0.5548           0.0           inf           inf          None        0.0647
-Natural Engl          LZ77         50000         36793         1.359        5.8869        4.2826        0.4647           0.0           inf           inf        0.7057        0.2116
-Natural Engl           LZW         50000         11858        4.2166        1.8973        4.2826        0.4647           0.0           inf           inf        0.8439        0.0637
-Natural Engl       Huffman         50000         26997        1.8521        4.3195        4.2826        0.4647           0.0           inf           inf          None        0.0683
-Low Redundan          LZ77         50000         61388        0.8145        9.8221        6.0217        0.2473           0.0           inf           inf        0.5089        0.3058
-Low Redundan           LZW         50000         46146        1.0835        7.3834        6.0217        0.2473           0.0           inf           inf        0.4669        0.1426
-Low Redundan       Huffman         50000         37810        1.3224        6.0496        6.0217        0.2473           0.0           inf           inf          None        0.0791
+RESULTS
+
+High Redundancy (Repeated Words) LZ77 2.3507 3.4032 0.1621716022491455
+High Redundancy (Repeated Words) LZW 4.4425 1.8008 0.06846761703491211
+High Redundancy (Repeated Words) Huffman 2.224 3.5971 0.06878256797790527
+High Redundancy (Repeated Words) Deflate 3.779396619329724 2.11674 13.159575462341309
+Large English (10000 chars) LZ77 1.2868 6.217 0.04661703109741211
+Large English (10000 chars) LZW 2.0202 3.9599 0.020433425903320312
+Large English (10000 chars) Huffman 1.8169 4.4032 0.014271259307861328
+Large English (10000 chars) Deflate 1.9043266603745468 4.200959933222037 0.5859658718109131
+Low Redundancy (Random Chars) LZ77 0.8145 9.8221 0.32179737091064453
+Low Redundancy (Random Chars) LZW 1.0835 7.3834 0.1495521068572998
+Low Redundancy (Random Chars) Huffman 1.3224 6.0496 0.08669424057006836
+Low Redundancy (Random Chars) Deflate 0.9806084675541173 8.1582 16.717652559280396
